@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackSync - Judge Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark mb-4 px-4">
+        <span class="navbar-brand fw-bold">Live Evaluation Matrix</span>
+        <span class="text-white">Panel: Main Round</span>
+    </nav>
+
+    <div class="container-fluid px-4">
+        <div class="row gap-4">
+            
+            <div class="col-md-7 bg-white p-4 rounded shadow-sm border">
+                <h4 class="mb-3 text-primary">Now Pitching: Team CodeCrafters</h4>
+                <div class="d-flex gap-2 mb-4">
+                    <a href="#" class="btn btn-outline-secondary btn-sm">View Final PPT</a>
+                    <a href="#" class="btn btn-outline-dark btn-sm">Open GitHub Repo</a>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Innovation & Originality (1-10)</label>
+                    <input type="range" class="form-range" min="1" max="10" value="7">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Technical Depth & Execution (1-10)</label>
+                    <input type="range" class="form-range" min="1" max="10" value="8">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Feasibility (1-10)</label>
+                    <input type="range" class="form-range" min="1" max="10" value="6">
+                </div>
+                
+                <button class="btn btn-primary w-100 py-2 fw-bold">Submit Final Score</button>
+            </div>
+
+            <div class="col-md-4 bg-white p-4 rounded shadow-sm border">
+                <h4 class="mb-3">Live Leaderboard</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start fw-bold">
+                        <div class="ms-2 me-auto">Team Alpha <span class="badge bg-secondary ms-1">Tie-Break Applied</span></div>
+                        <span class="badge bg-success rounded-pill fs-6">45/50</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto fw-bold text-primary">Team CodeCrafters</div>
+                        <span class="badge bg-warning text-dark rounded-pill fs-6">Pending</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">Tech Titans</div>
+                        <span class="badge bg-light text-dark border rounded-pill fs-6">38/50</span>
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
